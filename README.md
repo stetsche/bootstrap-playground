@@ -3,16 +3,19 @@
 ## Host the Webpage locally
 In order to see the webpage working and with all functionality skip the *Getting started* part and go to the [*local Hosting*](#local-hosting) part and download this [empty](https://github.com/stetsche/bootstrap-playground) or this [sample repository](https://github.com/SirSaibot/bootstrap-playground) and use it instead of forking your own repository. 
 
+
 ## Getting started <a name="gettingstarted"></a>
 ### Installing prerequisites
 
 First of you need to install some programms in case you don't already have them:
-- NodeJS (https://nodejs.org/en/download)
-- Github Desktop (https://desktop.github.com) or Git (https://git-scm.com/downloads)
+
+-[Github Desktop](https://desktop.github.com/) "graphical interface" 
+or 
+-[Git](https://git-scm.com/downloads) "code  interface"<hr>
 
 Optional, but recommended applications:
 - Visual Studio Code (https://code.visualstudio.com/download)
-- a nice Browser (not Internet Explorer or Microsoft Edge)
+- a browser with Bootstrap 5 support See if your borser is supported [here](https://github.com/twbs/bootstrap/blob/v5.0.2/.browserslistrc).
 
 After downloading and installing everything, you want to go to the [boostrap-playground repository](https://github.com/stetsche/bootstrap-playground) (https://github.com/stetsche/bootstrap-playground) and in the top-right click on the Fork button.
 ![image of button](readme-img/Fork.png)
@@ -54,3 +57,27 @@ and press Enter. Now there should be a URL with localhost like this:
 ![image of npm](readme-img/npm.png)
 
 Press on the *o* -key and a window in your default browser should open displaying your index.html page. The page automatically refreshes everytime you save some changes to any of your files.
+
+
+### Add Changes to this repository
+
+*** Add Changes via Pull requests ***
+<details>
+<summary> open pull request explanation  </summary>
+<br>
+Fork the repository.<br>
+Create a branch for your changes.<br>
+Make the necessary modifications in the branch.<br>
+Open a pull request in the original repository.<br>
+Describe your changes and request reviewers.<br>
+Address feedback and make adjustments if needed.<br>
+Ensure your changes pass any automated tests.<br>
+Merge the pull request into the main branch.<br>
+Delete the branch after merging.<br>
+</details><hr>
+
+
+
+
+
+
