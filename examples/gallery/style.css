@@ -1,0 +1,122 @@
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-nav-link {
+  display: block;
+  transform: scale(1.0);
+  margin-right: 5px;
+  margin-left: 5px;
+  transition-property: transform, margin-right !important;
+  transition-duration: .4s !important;
+  transform-origin: left !important;
+  transition-timing-function: ease-out;
+}
+
+.nav-link:hover {
+  transform: scale(1.2);
+  margin-right: 25px;
+}
+
+.custom-card-img-top {
+  transform: scale(1);
+  height: 450px;
+  object-fit: cover;
+  transition-property: height, transform !important;
+  transition-duration: 1.0s, 0.5s;
+  transition-timing-function: ease, ease-in;
+}
+
+.custom-card:hover>.zoom-container>.custom-card-img-top {
+  height: 525px;
+  transform: scale(1.1);
+}
+
+.custom-row {
+  margin-top: 50px !important;
+}
+
+.custom-card {
+  width: 22rem;
+  background-color: rgba(255, 255, 255, 0.80) !important;
+  transition-property: width !important;
+  transition-duration: 0.6s !important;
+  overflow: hidden;
+}
+
+.custom-card:hover>.custom-card-img-top {
+  height: 525px;
+}
+
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-card:hover {
+  width: 29rem;
+}
+
+.custom-col {
+  padding-bottom: 50px;
+  object-position: center;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.navbar-brand {
+  padding-left: 5px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #181818;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 9999;
+  border: 2px solid #757474;
+}
+
+.scroll-to-top.show {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.scroll-to-top.clicked {
+  animation: flyAway 2.5s ease forwards;
+}
+
+.tilt-card {
+  transition: transform 0.5s;
+}
+
+.tilt-card:hover {
+  transform: rotateX(-10deg) rotateY(10deg);
+}
+
+@keyframes flyAway {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100vh) rotate(720deg);
+  }
+}
